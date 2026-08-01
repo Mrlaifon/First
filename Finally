@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Ксюши ❤️</title>
+    <style>
+        /* ----- ОБНУЛЕНИЕ И ФОН ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(145deg, #ffe0ec 0%, #ffb3c6 100%);
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        /* ----- ОСНОВНАЯ КАРТОЧКА ----- */
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: rgba(255, 248, 250, 0.92);
+            backdrop-filter: blur(12px);
+            border-radius: 60px 60px 50px 50px;
+            padding: 40px 30px 50px;
+            box-shadow: 0 30px 60px rgba(180, 60, 80, 0.18);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            transition: all 0.2s ease;
+        }
+        /* ----- ЗАГОЛОВКИ ----- */
+        h1 {
+            color: #a1354b;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-shadow: 0 4px 12px rgba(180, 50, 70, 0.12);
+        }
+        .sub {
+            color: #6c3f4b;
+            font-size: 18px;
+            border-top: 2px solid #fad2d9;
+            border-bottom: 2px solid #fad2d9;
+            padding: 18px 0;
+            margin: 14px 0 22px;
+            line-height: 1.7;
+            font-weight: 500;
+            background: rgba(255, 235, 238, 0.4);
+            border-radius: 30px;
+        }
+        /* ----- ТАЙМЕР ----- */
+        .timer {
+            background: #fce9ed;
+            border-radius: 60px;
+            padding: 24px 14px;
+            margin: 18px 0 28px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px 22px;
+            font-weight: 600;
+            color: #3d1f2b;
+            border: 1px solid #fccfd7;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .timer span {
+            display: inline-block;
+            background: #fff8f9;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 19px;
+            box-shadow: inset 0 0 0 1px #ffd5dd;
+        }
+        .timer .num {
+            font-size: 32px;
+            color: #b33851;
+            margin-right: 6px;
+            font-weight: 700;
+        }
+        /* ----- 100 ПРИЧИН ----- */
+        .reasons-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #a1354b;
+            margin: 30px 0 16px;
+            letter-spacing: 0.5px;
+        }
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 18px;
+            text-align: left;
+            margin: 12px 0 10px;
+        }
+        .reasons-grid li {
+            list-style: none;
+            background: #fdf3f5;
+            padding: 10px 16px 10px 24px;
+            border-radius: 40px;
+            font-size: 15px;
+            color: #2e1a1f;
+            position: relative;
+            transition: 0.15s;
+            border: 1px solid transparent;
+            font-weight: 500;
+        }
+        .reasons-grid li:hover {
+            background: #fce4ea;
+            border-color: #f5b8c5;
+        }
+        .reasons-grid li::before {
+            content: "❤";
+            color: #b33851;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        /* ----- КНОПКА ----- */
+        .btn-heart {
+            background: #b33851;
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 14px 38px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.25s;
+            margin: 14px 0 0;
+            border: 1px solid #ffe2e2;
+            box-shadow: 0 8px 24px rgba(179, 56, 81, 0.28);
+            font-weight: 600;
+            letter-spacing: 0.8px;
+        }
+        .btn-heart:hover {
+            background: #922b41;
+            transform: scale(1.03);
+            box-shadow: 0 10px 32px rgba(179, 56, 81, 0.35);
+        }
+        .footer {
+            margin-top: 28px;
+            font-size: 16px;
+            color: #7f5760;
+        }
+        #extraMessage {
+            font-size: 22px;
+            color: #b33851;
+            margin-top: 20px;
+            font-weight: 700;
+            min-height: 50px;
+        }
+        /* ----- АДАПТАЦИЯ ПОД ТЕЛЕФОН ----- */
+        @media (max-width: 540px) {
+            h1 { font-size: 30px; }
+            .reasons-grid { grid-template-columns: 1fr; }
+            .timer { flex-direction: column; gap: 10px; }
+            .timer span { font-size: 16px; }
+            .timer .num { font-size: 26px; }
+            .container { padding: 28px 16px 35px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>❤️ Ксюша, я тебя очень сильно люблю ❤️</h1>
+
+    <div class="sub">
+        Ты — моя радость, моя нежность, моя опора.<br>
+        С каждым днём я люблю тебя всё больше.<br>
+        У тебя самый красивый голос, самая милая улыбка,<br>
+        и ты делаешь этот мир лучше только тем, что ты есть.
+    </div>
+
+    <!-- ===== СЧЁТЧИК ВРЕМЕНИ (С 22.12.2025) ===== -->
+    <div class="timer" id="timer">
+        <span><span class="num" id="days">0</span> дней</span>
+        <span><span class="num" id="hours">0</span> часов</span>
+        <span><span class="num" id="minutes">0</span> минут</span>
+        <span><span class="num" id="seconds">0</span> секунд</span>
+    </div>
+
+    <div class="reasons-title">💖 100 причин, почему я тебя люблю 💖</div>
+    <ul class="reasons-grid" id="reasonsList"></ul>
+
+    <button class="btn-heart" onclick="showExtraLove()">❤️ Нажми, если любишь ❤️</button>
+    <div class="footer" id="extraMessage"></div>
+
+</div>
+
+<script>
+    // ============================================================
+    // 1. 100 ПРИЧИН (СПИСОК)
+    // ============================================================
+    const reasons = [
+        "Ты красивая", "Ты милая", "У тебя приятный голос",
+        "Ты умеешь слушать", "Ты добрая", "Ты умная",
+        "Ты смешная", "Ты заботливая", "Ты честная",
+        "Ты умеешь поддерживать", "Ты вдохновляешь меня",
+        "Ты очень нежная", "Ты красиво смеёшься",
+        "Ты умеешь прощать", "Ты сильная", "Ты терпеливая",
+        "Ты моя муза", "Ты понимаешь меня с полуслова",
+        "Ты умеешь удивлять", "Ты та, с кем я хочу просыпаться",
+        "Ты любишь меня искренне", "Ты всегда на моей стороне",
+        "Ты приносишь свет в мою жизнь", "Ты заботишься обо мне",
+        "Ты делаешь даже обычный день особенным",
+        "Ты моя самая большая радость",
+        "Ты умеешь смеяться над моими шутками",
+        "Ты веришь в меня", "Ты не боишься быть собой",
+        "Ты умеешь любить по-настоящему", "Ты моя опора",
+        "Ты самая красивая, когда улыбаешься",
+        "Ты умеешь создавать уют", "Ты моя тихая гавань",
+        "Ты всегда честна со мной", "Ты умеешь радоваться мелочам",
+        "Ты помогаешь мне становиться лучше",
+        "Ты та, кого я искал", "Ты умеешь прощать ошибки",
+        "Ты моя лучшая подруга", "Ты самая нежная",
+        "Ты умеешь вдохновлять", "Ты моя главная мечта",
+        "Ты умеешь слушать сердцем", "Ты всегда рядом, когда трудно",
+        "Ты умеешь делать счастливым", "Ты моя вторая половина",
+        "Ты самая светлая", "Ты умеешь удивлять меня каждый день",
+        "Ты всегда в моих мыслях", "Ты умеешь прощать мои глупости",
+        "Ты моя вера в лучшее", "Ты делаешь мир добрее",
+        "Ты умеешь молчать, когда надо", "Ты умеешь говорить, когда надо",
+        "Ты мой самый родной человек", "Ты умеешь ценить момент",
+        "Ты моя муза и вдохновение", "Ты не боишься быть уязвимой",
+        "Ты умеешь любить без условий", "Ты всегда ищешь во мне хорошее",
+        "Ты умеешь быть сильной", "Ты умеешь быть мягкой",
+        "Ты моя любимая женщина", "Ты умеешь создавать красоту",
+        "Ты умеешь слушать тишину", "Ты умеешь быть счастливой",
+        "Ты заряжаешь меня энергией", "Ты умеешь успокаивать",
+        "Ты моя самая драгоценная", "Ты умеешь сохранять тепло",
+        "Ты умеешь быть разной — и это прекрасно",
+        "Ты моя причина улыбаться", "Ты умеешь принимать решения",
+        "Ты умеешь признавать ошибки", "Ты моя гордость",
+        "Ты умеешь находить выход", "Ты всегда стремишься к лучшему",
+        "Ты умеешь доверять", "Ты моя опора в трудные дни",
+        "Ты умеешь быть рядом", "Ты умеешь ждать",
+        "Ты умеешь верить", "Ты умеешь мечтать",
+        "Ты моя самая красивая мысль", "Ты умеешь чувствовать",
+        "Ты умеешь сопереживать", "Ты умеешь радоваться за меня",
+        "Ты моя самая тёплая", "Ты умеешь быть собой",
+        "Ты умеешь уважать", "Ты моя любовь навсегда"
+    ];
+
+    const list = document.getElementById('reasonsList');
+    for (let i = 0; i < Math.min(reasons.length, 100); i++) {
+        const li = document.createElement('li');
+        li.textContent = reasons[i];
+        list.appendChild(li);
+    }
+
+    // ============================================================
+    // 2. СЧЁТЧИК (С 22 ДЕКАБРЯ 2025)
+    // ============================================================
+    const startDate = new Date('2025-12-22T00:00:00');
+
+    function updateTimer() {
+        const now = new Date();
+        let diff = Math.floor((now - startDate) / 1000);
+        if (diff < 0) diff = 0;
+
+        const days = Math.floor(diff / 86400);
+        diff -= days * 86400;
+        const hours = Math.floor(diff / 3600);
+        diff -= hours * 3600;
+        const minutes = Math.floor(diff / 60);
+        const seconds = diff % 60;
+
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    // ============================================================
+    // 3. КНОПКА
+    // ============================================================
+    function showExtraLove() {
+        const msg = document.getElementById('extraMessage');
+        msg.innerHTML = '💖 Я люблю тебя больше всего на свете! Ты — моё счастье. 💖';
+        msg.style.opacity = '0';
+        msg.style.transform = 'scale(0.94)';
+        setTimeout(() => {
+            msg.style.transition = 'all 0.3s ease';
+            msg.style.opacity = '1';
+            msg.style.transform = 'scale(1)';
+        }, 40);
+    }
+</script>
+
+</body>
+</html>
